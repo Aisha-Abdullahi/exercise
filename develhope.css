@@ -16,7 +16,7 @@ header {
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
-    padding: 0;
+    padding: 0 10px;
 }
 
 menu>ul>li {
@@ -34,7 +34,7 @@ menu>ul>li:hover>ul {
 }
 
 menu>ul>li>a {
-    padding: 20px;
+    padding: 40px;
 }
 
 menu>ul>li>ul {
@@ -42,10 +42,18 @@ menu>ul>li>ul {
     top: 50px;
     display: none;
     list-style: none;
-    width: 40ch;
+    width: 200px;
     left: 0;
-    z-index: 1000;
+    background: #ec5990;
     transition-delay: 0.2s;
+}
+
+menu>ul>li>ul>li {
+    margin-bottom: 20px;
+}
+
+menu>ul>li>ul>li:hover {
+    background: #081229;
 }
 
 menu>ul>li>ul:hover {
